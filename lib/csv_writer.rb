@@ -4,7 +4,7 @@ require 'json'
 class CsvWriter
   def initialize(parsed_json:)
     raise ArgumentError, "parsed_json doit etre présent" if parsed_json.nil?
-    raise ArgumentError, "format invalide" if parsed_json.class.is_a? String
+    #raise ArgumentError, "format invalide" if parsed_json.class.is_a? String
 
     @parsed_json = parsed_json
   end
